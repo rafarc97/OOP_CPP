@@ -15,7 +15,7 @@ void Persona::imparte(Asignatura& asignatura, int horas){
 }
 
 void Persona::mostrarAsignatura() const {
-    if(!asignatura){
+    if(!asignatura){ // this->asignatura
         std::cout << "La persona no imparte ninguna asignatura\n";
     }else{
         asignatura->mostrar(); // this->asignatura->mostrar()
