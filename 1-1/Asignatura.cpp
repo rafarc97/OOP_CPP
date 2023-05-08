@@ -10,16 +10,16 @@ void Asignatura::impartida(Persona& persona){
 }
 
 const Persona& Asignatura::impartida() const{
-    return *persona; // probar con this->persona
+    return *persona; // *(this->persona)
 }
 
 void Asignatura::mostrarPersona() const{
-    if(!persona)
+    if(!persona) // this->persona
         std::cout << "No es impartida por ninguna persona\n";
     else
-        persona->mostrar();
+        persona->mostrar(); // this->persona->mostrar()
 }
 
 void Asignatura::mostrar() const{
-    std::cout << name << "\n";
+    std::cout << name << "\n"; // this->name
 }

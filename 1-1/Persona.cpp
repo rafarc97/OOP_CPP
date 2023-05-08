@@ -10,16 +10,16 @@ void Persona::imparte(Asignatura& asignatura){ // setter
 }
 
 const Asignatura& Persona::imparte() const{ // getter
-    return *asignatura; // probar con this->asignatura
+    return *asignatura; // *(this->asignatura)
 }
 
 void Persona::mostrarAsignatura() const{
-    if(!asignatura)
+    if(!asignatura) // this->asignatura
         std::cout << "No imparte ninguna asignatura\n";
     else
-        asignatura->mostrar();
+        asignatura->mostrar(); //this->asignatura->mostrar()
 }
 
 void Persona::mostrar() const{
-    std::cout << name << "\n";
+    std::cout << name << "\n"; // this->name
 }
