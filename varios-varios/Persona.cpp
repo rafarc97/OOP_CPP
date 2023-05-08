@@ -6,15 +6,15 @@
 #include "Asignatura.h"
 
 void Persona::imparte(Asignatura& asignatura) {
-        asignaturas.insert(&asignatura);
+        asignaturas.insert(&asignatura); // this->asignaturas.insert()...
 }
 
 const Persona::Asignaturas& Persona::imparte() const{
-    return asignaturas;
+    return asignaturas; // this->asignaturas
 }
 
 void Persona::mostrarAsignaturas() const{
-    if(asignaturas.empty())
+    if(asignaturas.empty()) // this->asignaturas.empty()
         std::cout << "No imparte ninguna asignatura\n";
     else{
         for(Persona::Asignaturas::const_iterator
@@ -25,5 +25,5 @@ void Persona::mostrarAsignaturas() const{
 }
 
 void Persona::mostrar() const{
-    std::cout << name << "\n";
+    std::cout << name << "\n"; // this->name
 }

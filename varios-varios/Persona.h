@@ -9,7 +9,7 @@
 #include <set>
 #include <iostream>
 
-class Asignatura;
+class Asignatura; // declaracion adelantada
 class Persona {
 public:
     typedef std::set<Asignatura*> Asignaturas; //sinonimo
