@@ -16,5 +16,4 @@ private:
     std::string nombre;
 };
 
-
 #endif //CLASE_ASOCIACION_SAE_ASIGNATURA_H

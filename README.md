@@ -17,4 +17,5 @@ This repository contains code examples of different binary relationships impleme
 ## atributos-enlace2
 ![alt atributos-enlace2](atributos-enlace2/atributos-enlace2.png)
 
-
+## clase-asociacion-sae
+![alt clase-asociacion-sae](clase-asociacion-sae/clase-asociacion-sae.png)

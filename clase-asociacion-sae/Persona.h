@@ -10,10 +10,10 @@
 
 class Persona {
 public:
+    Persona(std::string nombre_ = ""): nombre{nombre_} {}
     void mostrar() const;
 private:
     std::string nombre;
 };
-
 
 #endif //CLASE_ASOCIACION_SAE_PERSONA_H
