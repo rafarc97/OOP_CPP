@@ -15,6 +15,8 @@ public:
     PersonaImparteAsignatura(): directa{}, inversa{} {}
     void asocia(Persona& p, Asignatura& a);
     void asocia(Asignatura& a, Persona& p);
+    std::set<Asignatura*> asociados(Persona& p) const;
+    std::set<Persona*> asociados(Asignatura& a) const;
     void mostrarAsignaturas(Persona& p);
     void mostrarPersonas(Asignatura& a);
 private:

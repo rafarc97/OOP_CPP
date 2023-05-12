@@ -12,6 +12,20 @@ void PersonaImparteAsignatura::asocia(Asignatura& a, Persona& p){
     asocia(p,a);
 }
 
+std::set<Asignatura*> PersonaImparteAsignatura::asociados(Persona& p) const{
+    AD::const_iterator
+        i = directa.find(&p);
+    if(i != directa.end()) return i->second;
+    else return std::set<Asignatura*>();
+}
+
+std::set<Persona*> PersonaImparteAsignatura::asociados(Asignatura& a) const{
+    AI::const_iterator
+        i = inversa.find(&a);
+    if(i != inversa.end()) return i->second;
+    else return std::set<Persona*>();
+}
+
 void PersonaImparteAsignatura::mostrarAsignaturas(Persona& p) {
     if(directa[&p].cbegin() == directa[&p].cend()){
         std::cout << "La persona no imparte ninguna asignatura\n";
